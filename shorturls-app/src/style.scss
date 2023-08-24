@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap");
+
+* {
+  font-family: "Open Sans";
+}
+
+.logup {
+  &__wrapper {
+    padding: 50px 25px;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  &__fild {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text {
+    color: #00c3ac;
+    font-family: "Open Sans";
+  }
+  &__marg {
+    margin: 20px 0;
+  }
+  &__footer {
+    display: flex;
+    font-size: 12px;
+    a {
+      text-decoration: none;
+    }
+  }
+  &__error {
+    color: #ff5a5e;
+    padding: 10px 30px;
+  }
+  &__success {
+    font-size: 20px;
+    padding: 10px 50px;
+  }
+}
+.back-icon {
+  width: 25px;
+  height: 25px;
+}
+.back-icon:hover {
+  cursor: pointer;
+  box-shadow: 1px 5px 5px -3px rgba(57, 223, 223, 0.29);
+}
+.btn {
+  width: 100% !important ;
+  margin: 15px !important ;
+}
+.logup__text:hover {
+  cursor: pointer;
+  box-shadow: 1px 5px 5px -3px rgba(57, 223, 223, 0.29);
+}
+.is-danger {
+  background-color: #ff5a5e !important;
+}
+.question {
+  &__wrapper {
+    padding: 25px;
+    height: 100%;
+  }
+  &__link {
+    font-weight: 800;
+    color: #00c3ac;
+  }
+  &__rating {
+    &-item {
+      width: 100%;
+      &-stars {
+        margin-right: 5px;
+        cursor: pointer;
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+  &__checked {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  &__checked-label {
+    border: 2px solid #ff5a5e;
+    color: #ff5a5e;
+    font-weight: bold;
+    width: 155px;
+    height: 35px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    padding-top: 5px;
+  }
+  &__stars {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    &-stars {
+      margin-right: 10px;
+      cursor: pointer;
+      width: 33px;
+      height: 33px;
+    }
+  }
+  &__question {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 43px;
+  }
+  &__text {
+    color: #9b9b9b;
+    padding: 10px 50px;
+  }
+  &__logo {
+    background: url(../public/Bitmap.png);
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+  }
+  &__footer {
+    position: fixed;
+    bottom: 25px;
+    width: 87%;
+  }
+  &__progres {
+    width: 100%;
+    height: 3px;
+    background: #9b9b9b;
+    margin: 15px 0;
+    &__first {
+      width: 33%;
+      background: #ff5a5e;
+      height: 3px;
+    }
+    &__second {
+      width: 66%;
+      background: #ff5a5e;
+      height: 3px;
+    }
+    &__third {
+      width: 100%;
+      background: #ff5a5e;
+      height: 3px;
+    }
+  }
+  &__button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    margin: 0 10px 40px;
+    position: relative;
+  }
+}
+.question__button:first-child::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  content: "Not at all";
+  color: #000000;
+  height: 1px;
+  font-size: 12px;
+}
+.question__button:last-child::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  content: "Extremely";
+  color: #000000;
+  height: 1px;
+  font-size: 12px;
+}
+.question__button:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 2px rgba(255, 90, 94, 0.2);
+}
+.question__link:hover {
+  cursor: pointer;
+  box-shadow: 1px 5px 5px -3px rgba(57, 223, 223, 0.29);
+}
+.question__button:focus {
+  background: #ff5a5e;
+  color: #ffffff;
+}
+.feedback__links {
+  display: flex;
+  justify-content: space-around;
+}
+.question__checked-input {
+  display: none;
+}
+.question__checked-label-check {
+  color: #ffffff;
+  background: #ff5a5e;
+  font-weight: bold;
+  width: 155px;
+  height: 35px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  padding-top: 5px;
+}
+@media (min-width: 700px) {
+  .question__footer {
+    position: relative;
+    width: 100%;
+    bottom: -200px;
+  }
+}
